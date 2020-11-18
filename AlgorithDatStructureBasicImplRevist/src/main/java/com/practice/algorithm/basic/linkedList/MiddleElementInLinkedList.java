@@ -53,6 +53,26 @@ public class MiddleElementInLinkedList {
 		return slowPointer; 
  
 	}
+	
+	
+	//wallMart and VM wear problem solving
+	// reverse after pivotal point k
+		public Node reverAfterPivotalPoint(Node head, int k)
+		{
+			Node slowPointer, fastPointer; 
+			slowPointer = fastPointer = head; 
+	 
+			while(fastPointer !=null) { 
+				fastPointer = fastPointer.next; 
+				if(fastPointer != null && fastPointer.next != null) { 
+					slowPointer = slowPointer.next; 
+					fastPointer = fastPointer.next; 
+				} 
+			} 
+	 
+			return slowPointer; 
+	 
+		}
  
 	public static void main(String[] args) {
 		MiddleElementInLinkedList list = new MiddleElementInLinkedList();
