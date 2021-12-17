@@ -24,4 +24,12 @@ public class InsertionSort {
 	}
 
 	}
+	
+	
+	//Insertion sort details
+	//1)Before Sorting , find minimal value '-30'  [40, 10, -30, 45, 39, 32]swap it to first entry Before Sorting : [-30, 10, 40, 45, 39, 32]
+	//2) find next minimal value amd swap to second place and so on 10 is in second place no swap [-30, 10, 40, 45, 39, 32]
+	//3)[-30, 10, 32, 45, 39, 40]
+	//4) [-30, 10, 32, 39, 45, 40]
+	//5)  [-30, 10, 32, 39, 40, 45]
 }
